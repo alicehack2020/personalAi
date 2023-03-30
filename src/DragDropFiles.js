@@ -6,7 +6,7 @@ const DragDropFiles = () => {
   const [files, setFiles] = useState(null);
   const [videoFile,setVideoFile]=useState(null)
     const inputRef = useRef();
-  const [upload,setUpload]=useState(null)
+  const [upload,setUpload]=useState(0)
    const setData = (event) => {
     setFiles(URL.createObjectURL(event.target.files[0]))
     setVideoFile(event.target.files[0])
