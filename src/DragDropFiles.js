@@ -37,7 +37,7 @@ const DragDropFiles = () => {
   const handleUpload = async () => {
     const formData = new FormData();
     formData.append("file", videoFile);
-    await axios.post("https://adorable-waistcoat-cow.cyclic.app/upload", formData, {
+    await axios.post("https://personalai-zt16.onrender.com/upload", formData, {
       onUploadProgress: (data) => {
         setUpload(Math.floor((data.loaded / data.total) * 100));
       },
