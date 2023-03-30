@@ -37,7 +37,7 @@ const DragDropFiles = () => {
   const handleUpload = async () => {
     const formData = new FormData();
     formData.append("file", videoFile);
-    await axios.post("http://localhost:4000/upload", formData, {
+    await axios.post("https://adorable-waistcoat-cow.cyclic.app/upload", formData, {
       onUploadProgress: (data) => {
         setUpload(Math.floor((data.loaded / data.total) * 100));
       },
